@@ -1,0 +1,157 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px */
+}
+
+body {
+  background: var(--bg-color);
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto, Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-size: 1.2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #8a8f98;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #121212;
+  color: #8a8f98;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+.transition {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.journey-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 4rem;
+}
+
+.journey-info img {
+  max-width: 20rem;
+  border-radius: 50%;
+}
+
+.journey-info h1 {
+  padding: 2rem 0rem;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.journey-info p {
+  font-size: 1.4rem;
+  max-width: 70rem;
+}
+
+.journey-info .social ul {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.journey-info .social ul li {
+  position: relative;
+  padding: 0 0.4rem 0.4rem;
+}
+
+.journey-info .social ul li:not(:nth-child(1)) {
+  margin-left: 1rem;
+}
+
+.journey-info .social ul li:hover::after {
+  width: 100%;
+}
+
+.journey-info .social ul li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: white;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.card {
+  display: block;
+  background: #202022;
+  max-width: 700px;
+  padding: 3rem;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+/*# sourceMappingURL=styles.css.map */

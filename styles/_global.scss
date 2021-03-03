@@ -1,0 +1,46 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  background: var(--bg-color);
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,
+              Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,
+              Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-size: 1.2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: $background;
+  color: $text;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+.transition {
+  transition: all 0.25s ease;
+}
