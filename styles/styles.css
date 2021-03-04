@@ -1,43 +1,23 @@
 .transition {
-  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
 .container {
-  display: block;
-  margin: auto;
-  max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 4rem 2rem;
 }
 
 .journey-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding-right: 4rem;
+
+  text-align: center;
 }
 
 .journey-info h1 {
@@ -50,17 +30,18 @@
 
 .journey-info p {
   font-size: 1.4rem;
-  max-width: 70rem;
+}
+
+.journey-info .social {
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
 }
 
 .journey-info .social ul {
   padding-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .journey-info .social ul li {
@@ -84,14 +65,12 @@
   width: 0%;
   height: 1px;
   background: white;
-  -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
 
 .card {
   display: block;
   background: #202022;
-  max-width: 700px;
   padding: 3rem;
   border-radius: 25px;
   margin-bottom: 2rem;
@@ -103,7 +82,5 @@
 }
 
 .card:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
-/*# sourceMappingURL=styles.css.map */
