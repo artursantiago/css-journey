@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../../assets/icon.ico" type="image/x-icon">
+  <title>Day 2</title>
+</head>
+<body>
+  <div class="container">
+    <ul class="progressbar">
+      <li class="active" data-step="1">Crie uma conta</li>
+      <li data-step="2">Endereço</li>
+      <li data-step="3">Pagamento</li>
+      <li data-step="4">Confirmação</li>
+    </ul>
+    <div class="actions">
+      <button id="back" type="button">Voltar</button>
+      <button id="next" type="button">Avançar</button>
+    </div>
+  </div>
+  <script>
+    const backButton = document.querySelector('#back');
+    const nextButton = document.querySelector('#next');
+
+    const formSteps = document.querySelectorAll('.progressbar li');
+
+    backButton.addEventListener('click', () => {
+      let currentStep = null;
+
+      formSteps.forEach(step => {
+        if (step.classList.contains('active')) {
+          currentStep = step;
+        }
+      });
+
+      if (currentStep && currentStep != formSteps.item(0)) {
+        currentStep.classList.remove('active');
+      }
+    })
+
+    nextButton.addEventListener('click', () => {
+      let currentStep = null;
+
+      formSteps.forEach(step => {
+        if (step.classList.contains('active')) {
+          currentStep = step;
+        }
+      });
+
+      if (currentStep.nextElementSibling) {
+        currentStep.nextElementSibling.classList.add('active')
+      }
+    })
+    
+
+  </script>
+</body>
+</html>

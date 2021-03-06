@@ -1,0 +1,104 @@
+:root {
+  --dark-gray: #9FABAE;
+  --light-gray: #DFE3E4;
+  --green: #2ECC71;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 650px;
+  /* ? */
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  color: var(--dark-gray);
+  width: 25%;
+  text-align: center;
+}
+
+ul li::before {
+  content: attr(data-step);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 20px);
+  z-index: 99;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  transition: 0.5s ease;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: -50%;
+
+  width: 100%;
+  height: 5px;
+  background: var(--light-gray);
+  transition: 0.5s ease;
+}
+
+ul li:first-child::after {
+  width: 0;
+}
+
+ul li.active {
+  color: var(--green);
+}
+
+ul li.active::before {
+  background: var(--green);
+  color: #fff;
+}
+
+ul li.active::after {
+  background: var(--green);
+}
+
+.actions {
+  margin-top: 50px;
+}
+
+button {
+  font-size: 14px;
+  color: var(--green);
+
+  background: none;
+  padding: 12px 24px;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+button:first-child {
+  margin-right: 20px;
+}
+
+button:hover {
+  background: var(--green);
+  color: #fff;
+}
