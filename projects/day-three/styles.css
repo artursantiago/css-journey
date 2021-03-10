@@ -1,0 +1,23 @@
+body {
+  background: #FFB23B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #333333;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+ width: 200px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}

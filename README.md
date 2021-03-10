@@ -26,3 +26,12 @@ O que aprendi:
   - Criar uma progress bar dinâmica para formulários.
   - Utilizar atributos do html para estilização no css, com a função attr(data-step).
   - Utilizar a função calc() alinhar horizontalmente um elemento com position absolute. Ex: left: calc(50% - 20px).
+
+### Day 3
+
+<img src=".github/gifs/day-three.gif" width="500">
+
+[Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-three)
+
+O que aprendi:
+  - Aprendi a subistituir "..." em textos que extrapolaram o tamanho do seu container.
