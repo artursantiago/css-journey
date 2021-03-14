@@ -1,0 +1,74 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('assets/before.png');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transform-style: preserve-3d;  /* What this does? */
+  perspective: 500px; /* What this does? */
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner .blocks {
+  position: relative;
+  display: block;
+  width: 5vw;
+  height: 5vh;
+  animation: animate 2s ease-in-out forwards,
+  animateTwo 2s ease-in-out 10s forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateZ(2000px); /* TransformZ ? */
+    background: url('assets/after.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  100% {
+    transform: translateZ(0px);
+    background: url('assets/after.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+@keyframes animateTwo {
+  0% {
+    transform: translateZ(0px); /* TransformZ ? */
+    background: url('assets/after.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  100% {
+    transform: translateZ(2000px);
+    background: url('assets/after.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

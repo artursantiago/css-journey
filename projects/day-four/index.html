@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../../assets/icon.ico" type="image/x-icon">
+  <title>Day 4</title>
+</head>
+<body>
+  <section>
+    <div class="banner">
+      <div class="blocks"></div>
+    </div>
+  </section>
+  <script>
+    const banner = document.querySelector('.banner');
+    const blocks = document.getElementsByClassName('blocks');
+
+    for(let i = 1; i < 400; i++) {
+      banner.innerHTML += '<div class="blocks"></div>';
+      const duration = Math.random() * 5;
+      blocks[i].style.animationDuration = `${2 + duration}s`;
+      // blocks[i].style.animationDelay = `${duration}s`;
+    }
+
+    
+  </script>
+</body>
+</html>
