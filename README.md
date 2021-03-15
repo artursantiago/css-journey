@@ -7,7 +7,7 @@ Aqui vou documentar minha jornada em busca de melhorar minhas habilidades com CS
 
 ### Day 1
 
-<img src=".github/gifs/day-one.gif" width="500">
+<img src="https://user-images.githubusercontent.com/47838241/111171778-fefaee80-8583-11eb-9652-57e0c6e022ce.gif" width="500">
 
 [Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-one)
 
@@ -18,7 +18,7 @@ O que aprendi:
 
 ### Day 2
 
-<img src=".github/gifs/day-two.gif" width="500">
+<img src="https://user-images.githubusercontent.com/47838241/111171798-03bfa280-8584-11eb-892b-8f40b7245bd7.gif" width="500">
 
 [Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-two)
 
@@ -29,7 +29,7 @@ O que aprendi:
 
 ### Day 3
 
-<img src=".github/gifs/day-three.gif" width="500">
+<img src="https://user-images.githubusercontent.com/47838241/111171807-0621fc80-8584-11eb-9baf-28e4e904847d.gif" width="500">
 
 [Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-three)
 
