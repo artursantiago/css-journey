@@ -1,0 +1,81 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Marvel";
+  src: url("MarvelRegular.ttf");
+}
+
+.container {
+  overflow: hidden;
+}
+
+.marvel-wrapper {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marvel-wrapper p {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+
+  line-height: 100vh;
+
+  font-family: 'Marvel';
+  text-align: center;
+  background: red;
+  color: white;
+  mix-blend-mode: screen;
+  animation: bgPage 15s;
+}
+
+.marvel-wrapper p span {
+  display: inline-block;
+  height: min-content;
+  font-size: 30vw;
+  transform-origin: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+
+  animation: skewLogo 15s;
+}
+
+.marvel-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes skewLogo {
+  0% {
+    font-size: 80vw;
+    color: black;
+    border-bottom: 5px solid white;
+  }
+  100% {
+    font-size: 30vw;
+    color: white;
+    border-bottom: 5px solid white;
+  }
+}
+
+@keyframes bgPage {
+  0% {
+    background: black;
+  }
+  100% {
+    background: red;
+  }
+}

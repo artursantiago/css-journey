@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../../assets/icon.ico" type="image/x-icon">
+  <title>Day 6</title>
+</head>
+<body>
+  <div class="container">
+    <div class="marvel-wrapper">
+      <video class="intro" src="assets/marvel_intro_without_text.mp4" autoplay muted></video>
+      <p><span id="marvel-logo">MARVEL</span></p>
+    </div>
+  </div>
+  <script>
+    const marvelIntro = document.querySelector('.intro')
+    const marvelLogo = document.getElementById('marvel-logo')
+    let shadow = '';
+    for (let i = 0; i < 25; i++) {
+      shadow += (shadow ? ',' : '')+ -i*1+'px ' + i*1+'px 0 #000';
+    }
+    marvelLogo.style.textShadow = shadow
+  </script>
+</body>
+</html>
