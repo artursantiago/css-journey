@@ -35,3 +35,36 @@ O que aprendi:
 
 O que aprendi:
   - Aprendi a subistituir "..." em textos que extrapolaram o tamanho do seu container.
+
+### Day 4
+
+<img src=".github/gifs/day-four.gif" width="500">
+
+[Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-four)
+
+O que aprendi:
+  - Aprendi a ...
+
+### Day 5
+
+<img src="https://user-images.githubusercontent.com/47838241/111778571-9ec1c080-8893-11eb-8455-f8e149aa2b8a.gif" width="500">
+
+[Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-five)
+
+O que aprendi:
+  - Aprendi a a colocar imagens ou videos dentro de uma silhueta utilizando o
+    mix-blend-mode: screen.
+    - Com o screen o que tiver em branco será a parte em que a imagem e o video não
+      aparecerá e na cot preta será onde o video/imagem aparecerá.
+
+### Day 6
+
+<img src=".github/gifs/day-six-min.gif" width="500">
+
+[Meu Código](https://github.com/artursantiago/css-journey/tree/master/projects/day-six)
+
+O que aprendi:
+  - Aprendi uma nova forma de utilizar o mix-blend-mode: screen
+    - Caso coloque uma cor diferente de branco e preto, o video aparecerá, mais como
+      se tivesse uma layer daquela cor por cima
+  - Aprendi a usar o text-shadow para fazer um texto 3D
