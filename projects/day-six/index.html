@@ -12,7 +12,10 @@
 <body>
   <div class="container">
     <div class="marvel-wrapper">
-      <video class="intro" src="assets/marvel_intro_without_text.mp4" autoplay muted></video>
+      <video class="intro" autoplay muted>
+        <source src="assets/marvel_intro_without_text.mp4">
+      </video>
+      <audio src="assets/marvel_intro_without_text.mp4" autoplay></audio>
       <p><span id="marvel-logo">MARVEL</span></p>
     </div>
   </div>
@@ -20,7 +23,8 @@
     const marvelIntro = document.querySelector('.intro')
     const marvelLogo = document.getElementById('marvel-logo')
     let shadow = '';
-    for (let i = 0; i < 25; i++) {
+    console.log();
+    for (let i = 0; i < (window.innerWidth < 600 ? 10 : 25); i++) {
       shadow += (shadow ? ',' : '')+ -i*1+'px ' + i*1+'px 0 #000';
     }
     marvelLogo.style.textShadow = shadow
